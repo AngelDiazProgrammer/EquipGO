@@ -8,5 +8,15 @@ namespace EquipGO.Controllers
         {
             return View();
         }
+
+        public ActionResult recuperarContraseña()
+        {
+            return View();
+        }
+
+        public ActionResult envioCorreo()
+        {
+            return View();
+        }
     }
 }

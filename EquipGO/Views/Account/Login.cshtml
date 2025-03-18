@@ -24,7 +24,7 @@
                 </div>
                 <div class="input-group">
                         <div class="input-wrapper">
-                            <input type="text" id="username" name="username" placeholder="Ingrese su usuario" required />
+                            <input type="text" id="username" name="username" placeholder="Ingrese su usuario" required" />
                             <i class="fas fa-user"></i>
                         </div>
                 </div>
@@ -41,7 +41,7 @@
                     <label>
                         <input type="checkbox" name="remember" /> Recordarme
                     </label>
-                    <a href="#">¿Olvidó su contraseña?</a>
+                        <a href="@Url.Action("recuperarContraseña", "Account")">¿Olvidó su contraseña?</a>
                 </div>
                 <button type="submit" class="btn-login">
                     Ingresar <i class="fas fa-arrow-right"></i>

@@ -1,22 +1,114 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* ============================== */
+/*        CONFIGURACIÓN BASE      */
+/* ============================== */
 body {
-  margin-bottom: 60px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* ============================== */
+/*            CONTENEDOR          */
+/* ============================== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ============================== */
+/*            NAVBAR              */
+/* ============================== */
+.navbar-layout {
+    background-color: #ffffff;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+    .nav-link:hover {
+        color: #007bff;
+    }
+
+/* ============================== */
+/*            FOOTER              */
+/* ============================== */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    .footer a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+/* ============================== */
+/*      MENÚ RESPONSIVO (MÓVIL)   */
+/* ============================== */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background: white;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px;
+        border-bottom: 2px solid #ddd;
+    }
+
+        .nav-list.active {
+            display: flex;
+        }
+
+    .menu-toggle {
+        display: block;
+    }
 }
