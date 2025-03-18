@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Content\" />
     <Folder Include="Scripts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\login.css" />
   </ItemGroup>
 
 </Project>

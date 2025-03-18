@@ -1,8 +1,34 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "Inicio - EquipGO";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/css/index.css" rel="stylesheet" />
+</head>
+<body>
+    <header id="myheader">
+        <h1>Bienvenido a EquipGO</h1>
+        <p>Sistema de gestión y control de activos tecnológicos</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+            <li><a href="@Url.Action("Login", "Account")">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>¿Qué es EquipGO?</h2>
+            <p>EquipGO es un sistema integral diseñado para la gestión, control y seguridad de los activos tecnológicos de la empresa.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Outsourcing SAS</p>
+    </footer>
+</body>
+</html>

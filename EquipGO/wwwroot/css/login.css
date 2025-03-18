@@ -1,0 +1,145 @@
+﻿/* Estilos para el Login */
+body {
+    background: url('../img/fondoLogin.png') no-repeat center center fixed;
+    background-size: cover;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Usa toda la altura de la pantalla */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+
+
+.login-box {
+    background: white;
+    width: 90%; /* Responsivo: ocupa el 90% del ancho en pantallas pequeñas */
+    max-width: 650px; /* Ancho máximo en pantallas grandes */
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.brand {
+    font-family: cursive;
+    color: white;
+    background: linear-gradient(to right, black, gray);
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+    width: auto;
+    height: 80px;
+}
+
+#outsourcingLogo{
+    display: relative;
+    height: 90px;
+}
+
+#formularioLogin{
+    display: block
+}
+
+
+h1 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 2px;
+    display: block;
+}
+
+    .input-group label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 1px;
+    }
+
+.input-wrapper {
+    position: relative;
+}
+
+    .input-wrapper input {
+        width: 100%;
+        padding: 10px;
+        padding-right: 30px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .input-wrapper i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: gray;
+    }
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.btn-login {
+    background: linear-gradient(to right, red, darkred);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+    .btn-login i {
+        margin-left: 5px;
+    }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .login-box {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        padding: 20px; /* Menos padding en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 24px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+
+    h3 {
+        font-size: 16px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+
+    .input-wrapper input {
+        font-size: 14px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+
+    .btn-login {
+        font-size: 16px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+}
